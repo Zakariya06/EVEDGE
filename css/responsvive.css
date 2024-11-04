@@ -1,0 +1,376 @@
+@media screen and (max-width: 992px) {
+  /* index page */
+
+  /* Page Navbar */
+  .pageNavbar {
+    padding: 0.5em 1em;
+  }
+  .pageNavbar .navbar-toggler {
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+  .pageNavbar .navbar-toggler i {
+    color: #2d5ac7;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+  .pageNavbar .navbar-brand img {
+    width: 100px;
+  }
+  .pageNavbar .leftSide .nav-link {
+    font-size: 1em;
+    margin-bottom: 1rem;
+  }
+  .pageNavbar .ms-auto .nav-link.navBtn {
+    min-width: 100%;
+    font-size: 0.9em;
+    margin-top: 0.5rem;
+  }
+  .pageNavbar .ms-auto .nav-link.navBtn.odd {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .pageNavbar .ms-auto .nav-link.navBtn:hover {
+    opacity: 0.7;
+    transform: translateY(-4px);
+  }
+
+  /* Hero Section */
+  .heroSection .mainHeading {
+    font-size: 2.5em;
+  }
+  .heroSection .mainText {
+    width: 100%;
+    max-width: 100%;
+    margin: 1.5em 0 2em 0;
+    color: #ffffffc4;
+  }
+  .heroSection .heroBtn {
+    margin-right: 1.4em;
+  }
+  .heroSection .socialBtn {
+    font-size: 1.1em;
+  }
+
+  /* Work Section */
+  .workSection {
+    padding-bottom: 1rem;
+  }
+  .subHeading {
+    font-size: 1.5em;
+  }
+  .workSectionCard {
+    padding: 4rem 1rem;
+  }
+  .workSectionCard .cardArrow {
+    right: 0.6rem;
+  }
+  .workSectionCard:hover .cardArrow {
+    right: 0;
+  }
+  .mdHeading {
+    font-size: 1.5rem;
+  }
+  .workSectionCard .mainText {
+    font-size: 0.7rem;
+  }
+  .cardNumberCount {
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: 1.5rem;
+  }
+
+  /* export section  */
+  .expertSection {
+    padding: 4rem 0;
+  }
+  .exportCards {
+    padding: 1.5rem 2rem;
+  }
+  .exportCards .mdHeading {
+    font-size: 1.2rem;
+  }
+  .exportCards .mainText {
+    font-size: 0.8rem;
+  }
+  .workImg {
+    margin-bottom: 3rem;
+  }
+
+  /* planSection */
+  .planSection {
+    padding-bottom: 0;
+  }
+  .planCardContainer {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+  }
+  .planCardContainer .row {
+    row-gap: 2rem;
+  }
+  .planCard .subHeading {
+    font-size: 1.5rem;
+  }
+  .planCard .mainText {
+    font-size: 0.8;
+  }
+  .planCard .mdHeading {
+    font-size: 2.4rem;
+  }
+  .mainBtn {
+    font-size: 1.3rem;
+    padding: 0.5rem 2rem;
+    margin-top: 2.1rem;
+  }
+  .planCard2 {
+    transform: translateY(0px);
+  }
+  .mdHeading.proLabelContainer {
+    top: 1.4rem;
+    font-size: 2.2rem;
+  }
+  .questionSection .accordion .accordion-item {
+    margin-bottom: 0.7rem;
+  }
+  .questionSection .accordion .accordion-item .accordion-header {
+    padding: 1rem 0rem;
+    font-size: 0.8em;
+  }
+  .questionSection .accordion {
+    margin-top: 0rem;
+  }
+  /* footer  */
+  .footerHeader {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .footerLabel {
+    font-size: 1rem;
+  }
+  footer form {
+    width: 100%;
+  }
+  .inputArea {
+    width: 90%;
+  }
+  .submitbtn {
+    font-size: 1.1rem;
+  }
+  .footerLinksContainer .footerLink {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .footerLinksContainer .row {
+    row-gap: 2rem;
+  }
+  .socalIconContainer {
+    flex-wrap: wrap;
+    row-gap: 0.6rem;
+    justify-content: flex-start;
+  }
+  .copyWriteContainer {
+    flex-wrap: wrap;
+  }
+  .copyWriteContainer .mainText {
+    font-size: 0.86rem;
+  }
+
+  /* Sign In Page */
+  /* Form Body */
+  .formBody {
+    padding: 1.3rem;
+  }
+  .formBody .imgSide {
+    display: none;
+  }
+  .formBody .infoSide label {
+    font-size: 1em;
+  }
+  .formBody .infoSide input {
+    padding: 1em 1.5em;
+    margin-bottom: 1.3em;
+  }
+  .formBody .formBtn {
+    padding: 0.8em;
+    max-width: 100%;
+  }
+  .formBody .googleBtn {
+    padding: 1em;
+  }
+  /* Login Page */
+  .imgSide.login {
+    display: none;
+  }
+  .formBody .forgetLink {
+    margin-bottom: 4em;
+  }
+
+  /* DashBoard Pages  */
+  .hamberger {
+    display: block;
+  }
+  .sideMenu {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    transition: left 0.6s ease-out;
+  }
+  .sideMenu.show {
+    left: 0;
+  }
+  .closeIcon {
+    display: block;
+    position: absolute;
+    top: 2%;
+    right: 4%;
+  }
+  .sideHeading {
+    row-gap: 3rem;
+  }
+  .siderLink {
+    padding: 0.6rem 0rem;
+    width: 80%;
+    font-size: 0.9rem;
+  }
+  .dashTabHeader {
+    flex-wrap: wrap;
+  }
+
+  /* dashBoarContent */
+  .dashBoardContentHeader {
+    padding: 0.7rem 2rem;
+  }
+  .dashBoardContent .mainHeading {
+    font-size: 1.3rem;
+  }
+  .profileImg {
+    width: 40px;
+    height: 40px;
+  }
+  .dashBoardTableContainer .mainHeading {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .dashBoardDropDownContainer {
+    flex-wrap: wrap;
+  }
+  .dashBoardTable {
+    overflow-x: scroll;
+  }
+  .mainTable {
+    width: 995px;
+  }
+  .panigationContainer {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 3rem 0;
+  }
+  .pagePanigatonNumber {
+    flex-wrap: wrap;
+    row-gap: 0.6rem;
+    gap: 0.2rem;
+  }
+  .panigationTab {
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: 0.75rem;
+  }
+
+  .dailyPickDashboad .row {
+    row-gap: 2rem;
+  }
+
+  .memberTextCol .mdHeading {
+    font-size: 1.3rem;
+  }
+  .memberTextCol .subHeading span {
+    font-size: 1.3rem;
+  }
+  .dashBoardTableContainer .mainText {
+    font-size: 0.8rem;
+  }
+  .memberBtnContaienr {
+    flex-wrap: wrap;
+    row-gap: 0.7rem;
+  }
+  .seconColContainer .mainText {
+    font-size: 0.8rem;
+  }
+  .modalInputHolder {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .formBody.evPaymentPage input {
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-family: "Inter";
+    font-size: 0.96rem;
+    font-weight: 500;
+    color: #435376;
+    width: auto;
+  }
+  .paymentContnet {
+    padding: 3rem 0;
+  }
+
+  /* planModalBody */
+  .planModalBody .planCardContainer {
+    padding: 0rem 0rem;
+    margin-top: 3rem;
+  }
+  .planModalBody .planCardContainer .mdHeading {
+    font-size: 3rem;
+  }
+  .planModalBody .planCardContainer .planCard .subHeading {
+    font-size: 1.7rem;
+  }
+  .activeCard {
+    border: 1.22px solid #2d5ac7;
+  }
+  .currentPlanContianer .mdHeading {
+    font-size: 1.2rem !important;
+  }
+
+  .activeCard .planCard .subHeading {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .activeCard .planCard .mdHeading {
+    font-size: 3rem;
+  }
+  .planModalBody .planCardContainer .planCard .planFeature {
+    padding: 0 1rem;
+  }
+
+  /* membership */
+  .memberPage2PaymentDetail .inputHolders .inputArea {
+    width: 100%;
+  }
+  /* checkHolder */
+  .checkBoxInputArea {
+    width: 16px;
+    height: 16px;
+  }
+  .settingdropCol {
+    align-items: flex-start;
+  }
+
+  /* subText */
+  .subText {
+    font-size: 0.9rem;
+  }
+  .memberPage2Wrapper .memberTextContaienr {
+    padding: 2rem 1rem;
+  }
+  .memberPage2Wrapper .mainHeading {
+    padding: 0.6rem 1rem !important;
+  }
+}

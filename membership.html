@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVEDGE || Daily picks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsvive.css" />
+</head>
+
+<body>
+  <!-- dashBord Body -->
+  <div class="dashBoardWrapper dailyPickDashboad">
+    <div class="row">
+      <div class="col-3">
+        <div class="sideMenu">
+          <i class="fa-solid fa-xmark closeIcon"></i>
+          <div class="sideHeading">
+            <img src="./img/footer-logo.svg" alt="" class="sideLogo" />
+            <div class="siderLinksContainer">
+              <a href="./dailyPicks.html" class="siderLink">
+                <img src="./img/daily-picks.svg" alt="" class="sideLinkIcon" />
+                Daily picks
+              </a>
+              <a href="./Pickshistory.html" class="siderLink">
+                <img src="./img/picks-history.svg" alt="" class="sideLinkIcon" />
+                Picks history
+              </a>
+              <a href="./membership.html" class="siderLink active">
+                <img src="./img/Membership.svg" alt="" class="sideLinkIcon" />
+                Membership
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="dashBtn">Logout</a>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="dashBoardContent memberDashContent">
+          <div class="dashBoardContentHeader">
+            <div class="profileTab">
+              <i class="fa-solid fa-bars hamberger"></i>
+              <img src="./img/dash-profile.png" alt="Image" class="profileImg" />
+              <h1 class="mainHeading">Welcome, Henry</h1>
+            </div>
+            <a href="#" class="sittingIconLink">
+              <img src="./img/setting-icon.svg" alt="" class="settingIcon" />
+            </a>
+          </div>
+
+          <div class="memberBoxWrapper">
+            <div class="col-lg-9 mx-auto">
+              <div class="dashBoardTableContainer">
+                <h1 class="mainHeading ps-5">YOUR MEMBERSHIP</h1>
+
+                <div class="memberTextContaienr">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="memberTextCol">
+                        <p class="subText">Current Plan:</p>
+                        <h1 class="mdHeading">Premium Plan</h1>
+                        <h5 class="subHeading">
+                          <span>$500</span> (VAT may apply)
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="memberTextCol">
+                        <p class="mainText dashText">Billed Monthly</p>
+                        <p class="mainText">
+                          Next Payment: 12th October, 2024
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="memberBtnContaienr">
+                    <button class="dashBtn" class="dashBtn active" type="button" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal3">Change Plan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-9 mx-auto seconColContainer">
+              <div class="dashBoardTableContainer">
+                <h1 class="mainHeading ps-5">BILLING INFORMATION</h1>
+
+                <div class="memberTextContaienr">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="memberTextCol">
+                        <h1 class="mainText colHeading">Premium Plan</h1>
+                        <p class="mainText">Henry Michaels</p>
+                        <p class="mainText">henrytheman@email.com</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="memberBtnContaienr rowSecondbtnContainer">
+                        <button class="dashBtn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                          Billing History
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="memberTextContaienr">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="memberTextCol">
+                        <h1 class="mainText colHeading">Payment Method</h1>
+                        <label class="inputLabel">Credit Card</label>
+                        <div class="inputHolders">
+                          <img src="./img/date-icon.svg" alt="image" class="dateImg" />
+                          <input type="text" placeholder="**** - **** - ****- 1769" class="inputArea" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="memberBtnContaienr rowSecondbtnContainer">
+                        <button class="dashBtn active" type="button" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">
+                          Update Method
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="subScriptionCancelbtn">
+                <button class="dashBtn">Cancel Subscription</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Upgrat modal -->
+  <!-- Modal -->
+  <div class="modal fade upgratModl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="mainHeading" id="exampleModalLabel">
+          Update Payment Method
+        </h5>
+        <div class="modal-body">
+          <p class="mainText">Choose Option</p>
+
+          <div class="paymentOptionContainer">
+            <a href="#" class="paymentOptionLink">
+              <img src="./img/payment-card-1.svg" alt="" class="paymetLinkImg" />
+            </a>
+            <a href="#" class="paymentOptionLink">
+              <img src="./img/payment-card-2.svg" alt="" class="paymetLinkImg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--payment detail -->
+  <div class="modal fade upgratModl" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="mainHeading" id="exampleModalLabel">
+          <img src="./img/arrow-back.svg" alt="" class="arrowLeft" />
+          Enter Card Details
+        </h5>
+        <div class="modal-body paymetditailContent">
+          <div class="modalInputHolder">
+            <div>
+              <img src="./img/date-cion-fill.svg" alt="" class="dateImg" />
+              <input type="text" placeholder="Card Number" class="inputText" />
+            </div>
+            <p class="inputText">MM/YY</p>
+            <p class="inputText">CVC</p>
+          </div>
+
+          <a href="#" class="dashBtn active mt-3">Update Card</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- chose plan Modal -->
+  <div class="modal fade upgratModl chosePlanModal" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="mainHeading" id="exampleModalLabel">
+          <img src="./img/arrow-back.svg" alt="" class="arrowLeft" />
+          Change your Plan
+        </h5>
+        <div class="modal-body planModalBody">
+          <p class="mainText">Choose Option</p>
+          <!-- plan section  -->
+
+          <div class="planCardContainer">
+            <div class="row planModalRow">
+              <div class="col-lg-4">
+                <div class="activeCard">
+                  <div class="currentPlanContianer">
+                    <h1 class="mdHeading">CURRENT PLAN</h1>
+                  </div>
+                  <div class="planCard">
+                    <h3 class="subHeading">STARTER <span>PLAN</span></h3>
+                    <p class="mainText">
+                      Lorem dasum doluo sit amet, comsectent diment clickis
+                      suspendiase
+                    </p>
+
+                    <div class="mdHeading">$599. <span> 99</span></div>
+
+                    <div class="planFeature">
+                      <h5 class="smHeading">
+                        <img src="./img/check.svg" alt="Image" class="checkImg" />
+                        Donec Maleuared Pluvenice
+                      </h5>
+                      <h5 class="smHeading">
+                        <img src="./img/check.svg" alt="Image" class="checkImg" />
+                        Sed Tire For Side Lined
+                      </h5>
+                      <h5 class="smHeading">
+                        <img src="./img/check.svg" alt="Image" class="checkImg" />
+                        Pellete Morefull Syptems
+                      </h5>
+                      <h5 class="smHeading">
+                        <img src="./img/check.svg" alt="Image" class="checkImg" />
+                        Deneld Provendis
+                      </h5>
+                      <h5 class="smHeading">
+                        <img src="./img/check.svg" alt="Image" class="checkImg" />
+                        Numblock Sytematics
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="planCard">
+                  <h3 class="subHeading">
+                    <img src="./img/royal-plan.png" alt="img" class="royalImg" />
+                    ROYAL<span>PLAN</span>
+                  </h3>
+                  <p class="mainText">
+                    Lorem dasum doluo sit amet, comsectent diment clickis
+                    suspendiase
+                  </p>
+
+                  <div class="mdHeading">$1199.<span>99</span></div>
+
+                  <div class="planFeature">
+                    <h5 class="smHeading">
+                      <img src="./img/check.svg" alt="Image" class="checkImg" />
+                      Donec Maleuared Pluvenice
+                    </h5>
+                    <h5 class="smHeading">
+                      <img src="./img/check.svg" alt="Image" class="checkImg" />
+                      Sed Tire For Side Lined
+                    </h5>
+                    <h5 class="smHeading">
+                      <img src="./img/check.svg" alt="Image" class="checkImg" />
+                      Pellete Morefull Syptems
+                    </h5>
+                    <h5 class="smHeading">
+                      <img src="./img/check.svg" alt="Image" class="checkImg" />
+                      Deneld Provendis
+                    </h5>
+                    <h5 class="smHeading">
+                      <img src="./img/check.svg" alt="Image" class="checkImg" />
+                      Numblock Sytematics
+                    </h5>
+                    <a href="#" class="mainBtn"> Upgrade Plan </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="planCard">
+                  <h3 class="subHeading">REGULAR <span>PLAN</span></h3>
+                  <p class="mainText">
+                    Lorem dasum doluo sit amet, comsectent diment clickis
+                    suspendiase
+                  </p>
+                  <div class="mdHeading">$799.<span> 99</span></div>
+                  <div class="planFeature">
+                    <h5 class="smHeading">
+                      <img src="./img/check.svg" alt="Image" class="checkImg" />
+                      Donec Maleuared Pluvenice
+                    </h5>
+                    <h5 class="smHeading">
+                      <img src="./img/check.svg" alt="Image" class="checkImg" />
+                      Sed Tire For Side Lined
+                    </h5>
+                    <h5 class="smHeading">
+                      <img src="./img/check.svg" alt="Image" class="checkImg" />
+                      Pellete Morefull Syptems
+                    </h5>
+                    <h5 class="smHeading">
+                      <img src="./img/check.svg" alt="Image" class="checkImg" />
+                      Deneld Provendis
+                    </h5>
+                    <h5 class="smHeading">
+                      <img src="./img/check.svg" alt="Image" class="checkImg" />
+                      Numblock Sytematics
+                    </h5>
+                    <a href="#" class="mainBtn"> Upgrade Plan </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

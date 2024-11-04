@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVEDGE || Picks history</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsvive.css" />
+  </head>
+
+  <body>
+    <!-- dashBord Body -->
+    <div class="dashBoardWrapper">
+      <div class="row">
+        <div class="col-3">
+          <div class="sideMenu">
+            <i class="fa-solid fa-xmark closeIcon"></i>
+            <div class="sideHeading">
+              <img src="./img/footer-logo.svg" alt="" class="sideLogo" />
+              <div class="siderLinksContainer">
+                <a href="./dailyPicks.html" class="siderLink">
+                  <img
+                    src="./img/daily-picks.svg"
+                    alt=""
+                    class="sideLinkIcon"
+                  />
+                  Daily picks
+                </a>
+                <a href="./Pickshistory.html" class="siderLink active">
+                  <img
+                    src="./img/picks-history.svg"
+                    alt=""
+                    class="sideLinkIcon"
+                  />
+                  Picks history
+                </a>
+                <a href="./membership.html" class="siderLink">
+                  <img src="./img/Membership.svg" alt="" class="sideLinkIcon" />
+                  Membership
+                </a>
+              </div>
+            </div>
+
+            <a href="#" class="dashBtn">Logout</a>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="dashBoardContent">
+            <div class="dashBoardContentHeader">
+              <div class="profileTab">
+                <i class="fa-solid fa-bars hamberger"></i>
+                <img
+                  src="./img/dash-profile.png"
+                  alt="Image"
+                  class="profileImg"
+                />
+                <h1 class="mainHeading">Welcome, Henry</h1>
+              </div>
+              <a href="#" class="sittingIconLink">
+                <img src="./img/setting-icon.svg" alt="" class="settingIcon" />
+              </a>
+            </div>
+
+            <div class="dashBoardTableContainer">
+              <h1 class="mainHeading">PICKS HISTORY</h1>
+
+              <div class="dashBoardDropDownContainer">
+                <div class="dateDrop">
+                  <img src="./img/date-icon.svg" alt="" class="dateIcon" />
+                  <p class="mainText">January 1 - September 1, 2024</p>
+                </div>
+                <div class="dropdown dateDrop">
+                  <p
+                    class="mainText dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    All Sports
+                  </p>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown dateDrop">
+                  <p
+                    class="dropdown-toggle mainText"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Wins
+                  </p>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="dashBoardTable">
+                <table class="mainTable">
+                  <colgroup>
+                    <col width="15.5%" />
+                    <col width="15.5%" />
+                    <col width="15.5%" />
+                    <col width="15.5%" />
+                    <col width="15.5%" />
+                    <col width="15.5%" />
+                    <col width="7%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <td class="tableHeading">Sport</td>
+                      <td class="tableHeading">Date</td>
+                      <td class="tableHeading">Type</td>
+                      <td class="tableHeading">Pick</td>
+                      <td class="tableHeading">Source</td>
+                      <td class="tableHeading">Match Result</td>
+                      <td class="tableHeading">Result</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tableText">NFL</td>
+                      <td class="tableText">9-15-24</td>
+                      <td class="tableText">Straight</td>
+                      <td class="tableText">Raptors-4</td>
+                      <td class="tableText">Analytical</td>
+                      <td class="tableText">Raptors 12-4</td>
+                      <td class="checkIconTd ps-3">
+                        <img
+                          src="./img/check-icon.svg"
+                          alt="Imge"
+                          class="checkTableIcon"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tableText">NFL</td>
+                      <td class="tableText">9-15-24</td>
+                      <td class="tableText">Straight</td>
+                      <td class="tableText">Raptors-4</td>
+                      <td class="tableText">Analytical</td>
+                      <td class="tableText">Raptors 12-4</td>
+                      <td class="checkIconTd ps-3">
+                        <img
+                          src="./img/check-icon.svg"
+                          alt="Imge"
+                          class="checkTableIcon"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tableText">NFL</td>
+                      <td class="tableText">9-15-24</td>
+                      <td class="tableText">Straight</td>
+                      <td class="tableText">Raptors-4</td>
+                      <td class="tableText">Analytical</td>
+                      <td class="tableText">Raptors 12-4</td>
+                      <td class="checkIconTd ps-3">
+                        <img
+                          src="./img/check-icon.svg"
+                          alt="Imge"
+                          class="checkTableIcon"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tableText">NFL</td>
+                      <td class="tableText">9-15-24</td>
+                      <td class="tableText">Straight</td>
+                      <td class="tableText">Raptors-4</td>
+                      <td class="tableText">Analytical</td>
+                      <td class="tableText">Raptors 12-4</td>
+                      <td class="checkIconTd ps-3">
+                        <img
+                          src="./img/check-icon.svg"
+                          alt="Imge"
+                          class="checkTableIcon"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tableText">NFL</td>
+                      <td class="tableText">9-15-24</td>
+                      <td class="tableText">Straight</td>
+                      <td class="tableText">Raptors-4</td>
+                      <td class="tableText">Analytical</td>
+                      <td class="tableText">Raptors 12-4</td>
+                      <td class="checkIconTd ps-3">
+                        <img
+                          src="./img/check-icon.svg"
+                          alt="Imge"
+                          class="checkTableIcon"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tableText">NFL</td>
+                      <td class="tableText">9-15-24</td>
+                      <td class="tableText">Straight</td>
+                      <td class="tableText">Raptors-4</td>
+                      <td class="tableText">Analytical</td>
+                      <td class="tableText">Raptors 12-4</td>
+                      <td class="checkIconTd ps-3">
+                        <img
+                          src="./img/check-icon.svg"
+                          alt="Imge"
+                          class="checkTableIcon"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tableText">NFL</td>
+                      <td class="tableText">9-15-24</td>
+                      <td class="tableText">Straight</td>
+                      <td class="tableText">Raptors-4</td>
+                      <td class="tableText">Analytical</td>
+                      <td class="tableText">Raptors 12-4</td>
+                      <td class="checkIconTd ps-3">
+                        <img
+                          src="./img/check-icon.svg"
+                          alt="Imge"
+                          class="checkTableIcon"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tableText">NFL</td>
+                      <td class="tableText">9-15-24</td>
+                      <td class="tableText">Straight</td>
+                      <td class="tableText">Raptors-4</td>
+                      <td class="tableText">Analytical</td>
+                      <td class="tableText">Raptors 12-4</td>
+                      <td class="checkIconTd ps-3">
+                        <img
+                          src="./img/check-icon.svg"
+                          alt="Imge"
+                          class="checkTableIcon"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tableText">NFL</td>
+                      <td class="tableText">9-15-24</td>
+                      <td class="tableText">Straight</td>
+                      <td class="tableText">Raptors-4</td>
+                      <td class="tableText">Analytical</td>
+                      <td class="tableText">Raptors 12-4</td>
+                      <td class="checkIconTd ps-3">
+                        <img
+                          src="./img/check-icon.svg"
+                          alt="Imge"
+                          class="checkTableIcon"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tableText">NFL</td>
+                      <td class="tableText">9-15-24</td>
+                      <td class="tableText">Straight</td>
+                      <td class="tableText">Raptors-4</td>
+                      <td class="tableText">Analytical</td>
+                      <td class="tableText">Raptors 12-4</td>
+                      <td class="checkIconTd ps-3">
+                        <img
+                          src="./img/check-icon.svg"
+                          alt="Imge"
+                          class="checkTableIcon"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="panigationContainer">
+                <img
+                  src="./img/left-arrow.svg"
+                  alt=""
+                  class="panigationArrow"
+                />
+
+                <div class="pagePanigatonNumber">
+                  <a href="#" class="panigationTab active">1</a>
+                  <a href="#" class="panigationTab">2</a>
+                  <a href="#" class="panigationTab">3</a>
+                  <a href="#" class="panigationTab">4</a>
+                  <a href="#" class="panigationTab">5</a>
+                  .......
+                  <a href="#" class="panigationTab">12</a>
+                  <a href="#" class="panigationTab">13</a>
+                </div>
+
+                <img
+                  src="./img/right-arrow.svg"
+                  alt=""
+                  class="panigationArrow"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
